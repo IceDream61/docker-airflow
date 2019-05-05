@@ -79,6 +79,7 @@ case "$1" in
   scheduler)
     sleep 10
     exec airflow scheduler
+    ;;
   worker)
     # To give the webserver time to run initdb.
     sleep 10
